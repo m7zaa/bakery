@@ -20,7 +20,26 @@ namespace Bakery
                 Cookie cookie = new Cookie(cookieQuant, cookieTotal);
                 Bread bread = new Bread(breadQuant, breadTotal);
                 int total = (Cookie.CookieCost(cookieQuant, cookieTotal)) + (Bread.BreadCost(breadQuant, breadTotal));
-                Console.WriteLine("Your total is $" + total + ".");
+                Console.WriteLine("Your total is $" + total + ". Would you like anything else? Y/N");
+                string PurchaseMoreYN = Console.ReadLine();
+                if (PurchaseMoreYN == "Y" || PurchaseMoreYN == "y")
+                {
+                    Console.WriteLine("How many more loaves would you like?");
+                    int newBreadQuant = int.Parse(Console.ReadLine());
+                    Console.WriteLine("How many more cookies would you like?");
+                    int newCookieQuant = int.Parse(Console.ReadLine());
+                    int finalBreadQuant = newBreadQuant + breadQuant;
+                    int finalCookieQuant = newCookieQuant + cookieQuant;
+                    int newTotal = (Cookie.CookieCost(finalCookieQuant, cookieTotal)) + (Bread.BreadCost(finalBreadQuant, breadTotal));
+                    Console.WriteLine("Your new total is $" + newTotal + ". Hand it over.");
+
+                }
+                else
+                {
+                    Console.WriteLine("Ok, then give me $" + total + " and GET OUT!");
+                }
+
+                    
             } 
             else 
             {

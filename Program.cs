@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-
 namespace Bakery
 {
     public class Program
@@ -21,14 +20,12 @@ namespace Bakery
                 Cookie cookie = new Cookie(cookieQuant, cookieTotal);
                 Bread bread = new Bread(breadQuant, breadTotal);
                 int total = (Cookie.CookieCost(cookieQuant, cookieTotal)) + (Bread.BreadCost(breadQuant, breadTotal));
-                Console.WriteLine("Your total is $" + (Bread.BreadCost(breadQuant, breadTotal)));
+                Console.WriteLine("Your total is $" + total + ".");
             } 
             else 
             {
                 Console.WriteLine("No problem. Thanks for stopping by. I hope you have a great rest of your day!");
             }
         }
-
-       
     }
 }

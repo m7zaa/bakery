@@ -7,6 +7,11 @@ namespace Bakery
     {
         public static void Main()
         {
+
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.Clear();
+
+
             var arr = new[]
             {
                 @" _    _      _                          ",

@@ -1,0 +1,11 @@
+/Users/Zaayer/Desktop/Bakery/bin/Debug/netcoreapp2.2/Bakery.deps.json
+/Users/Zaayer/Desktop/Bakery/bin/Debug/netcoreapp2.2/Bakery.runtimeconfig.json
+/Users/Zaayer/Desktop/Bakery/bin/Debug/netcoreapp2.2/Bakery.runtimeconfig.dev.json
+/Users/Zaayer/Desktop/Bakery/bin/Debug/netcoreapp2.2/Bakery.dll
+/Users/Zaayer/Desktop/Bakery/bin/Debug/netcoreapp2.2/Bakery.pdb
+/Users/Zaayer/Desktop/Bakery/obj/Debug/netcoreapp2.2/Bakery.csprojAssemblyReference.cache
+/Users/Zaayer/Desktop/Bakery/obj/Debug/netcoreapp2.2/Bakery.csproj.CoreCompileInputs.cache
+/Users/Zaayer/Desktop/Bakery/obj/Debug/netcoreapp2.2/Bakery.AssemblyInfoInputs.cache
+/Users/Zaayer/Desktop/Bakery/obj/Debug/netcoreapp2.2/Bakery.AssemblyInfo.cs
+/Users/Zaayer/Desktop/Bakery/obj/Debug/netcoreapp2.2/Bakery.dll
+/Users/Zaayer/Desktop/Bakery/obj/Debug/netcoreapp2.2/Bakery.pdb

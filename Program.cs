@@ -7,7 +7,20 @@ namespace Bakery
     {
         public static void Main()
         {
-            Console.WriteLine("Welcome to Amy's Baking Co! Today, we have fresh sourdough loaves for $5 (Buy 2, get 1 free) and our cookie of the day for $2/each or 3 for $5. Would you like to buy anything? Y/N");
+            var arr = new[]
+                       {
+                    @" _    _      _                          ",
+                    @"| |  | |    | |                         ",
+                    @"| |  | | ___| | ___ ___  _ __ ___   ___ ",
+                    @"| |/\| |/ _ \ |/ __/ _ \| '_ ` _ \ / _ \",
+                    @"\  /\  /  __/ | (_| (_) | | | | | |  __/",
+                    @" \/  \/ \___|_|\___\___/|_| |_| |_|\___|",
+
+            };
+            Console.WriteLine("\n\n");
+            foreach (string line in arr)
+                Console.WriteLine(line); 
+                Console.WriteLine("...to Amy's Baking Co! Today, we have fresh sourdough loaves for $5 (Buy 2, get 1 free) and our cookie of the day for $2/each or 3 for $5. Would you like to buy anything? Y/N");
             string PurchaseYN = Console.ReadLine();
             if (PurchaseYN == "Y" || PurchaseYN == "y")
             {
@@ -31,12 +44,12 @@ namespace Bakery
                     int finalBreadQuant = newBreadQuant + breadQuant;
                     int finalCookieQuant = newCookieQuant + cookieQuant;
                     int newTotal = (Cookie.CookieCost(finalCookieQuant, cookieTotal)) + (Bread.BreadCost(finalBreadQuant, breadTotal));
-                    Console.WriteLine("Your new total is $" + newTotal + ". Hand it over.");
+                    Console.WriteLine("Your new total is $" + newTotal + ".");
 
                 }
                 else
                 {
-                    Console.WriteLine("Ok, then give me $" + total + " and GET OUT!");
+                    Console.WriteLine("Ok, then give me $" + total + ".");
                 }
 
                     

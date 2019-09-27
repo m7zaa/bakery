@@ -8,7 +8,8 @@ namespace Bakery
         public static void Main()
         {
 
-            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.BackgroundColor = ConsoleColor.Gray;
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.Clear();
 
 
@@ -70,6 +71,9 @@ namespace Bakery
                 }
                 else
                 {
+                    Console.BackgroundColor = ConsoleColor.DarkGray;
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Clear();
                     Console.WriteLine("Ok, great. Your total is $" + total + ".");
                     var arr3 = new[]
                     {
@@ -92,6 +96,9 @@ namespace Bakery
             } 
             else 
             {
+                Console.BackgroundColor = ConsoleColor.DarkGray;
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Clear();
                 Console.WriteLine("No problem. Thanks for stopping by. I hope you have a great rest of your day!");
                 var arr2 = new[]
                       {

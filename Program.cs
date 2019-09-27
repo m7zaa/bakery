@@ -8,19 +8,19 @@ namespace Bakery
         public static void Main()
         {
             var arr = new[]
-                       {
-                    @" _    _      _                          ",
-                    @"| |  | |    | |                         ",
-                    @"| |  | | ___| | ___ ___  _ __ ___   ___ ",
-                    @"| |/\| |/ _ \ |/ __/ _ \| '_ ` _ \ / _ \",
-                    @"\  /\  /  __/ | (_| (_) | | | | | |  __/",
-                    @" \/  \/ \___|_|\___\___/|_| |_| |_|\___|",
+            {
+                @" _    _      _                          ",
+                @"| |  | |    | |                         ",
+                @"| |  | | ___| | ___ ___  _ __ ___   ___ ",
+                @"| |/\| |/ _ \ |/ __/ _ \| '_ ` _ \ / _ \",
+                @"\  /\  /  __/ | (_| (_) | | | | | |  __/",
+                @" \/  \/ \___|_|\___\___/|_| |_| |_|\___|",
 
             };
             Console.WriteLine("\n\n");
             foreach (string line in arr)
                 Console.WriteLine(line); 
-                Console.WriteLine("...to Amy's Baking Co! Today, we have fresh sourdough loaves for $5 (Buy 2, get 1 free) and our cookie of the day for $2/each or 3 for $5. Would you like to buy anything? Y/N");
+                Console.WriteLine("...to Pierre's Bakery. Today, we have fresh sourdough loaves for $5 (Buy 2, get 1 free) and our cookie of the day for $2 or 3 for $5. Would you like to buy anything? Y/N");
             string PurchaseYN = Console.ReadLine();
             if (PurchaseYN == "Y" || PurchaseYN == "y")
             {
@@ -45,11 +45,42 @@ namespace Bakery
                     int finalCookieQuant = newCookieQuant + cookieQuant;
                     int newTotal = (Cookie.CookieCost(finalCookieQuant, cookieTotal)) + (Bread.BreadCost(finalBreadQuant, breadTotal));
                     Console.WriteLine("Your new total is $" + newTotal + ".");
+                    
+                    var arr3 = new[]
+                    {
+                        @"      _______ _                 _           __                 _                    _               _           _ ",
+                        @"     |__   __| |               | |         / _|               | |                  (_)             | |         | |",
+                        @"        | |  | |__   __ _ _ __ | | _____  | |_ ___  _ __   ___| |_ ___  _ __  _ __  _ _ __   __ _  | |__  _   _| |",
+                        @"        | |  | '_ \ / _` | '_ \| |/ / __| |  _/ _ \| '__| / __| __/ _ \| '_ \| '_ \| | '_ \ / _` | | '_ \| | | | |",
+                        @"        | |  | | | | (_| | | | |   <\__ \ | || (_) | |    \__ \ || (_) | |_) | |_) | | | | | (_| | | |_) | |_| |_|",
+                        @"        |_|  |_| |_|\__,_|_| |_|_|\_\___/ |_| \___/|_|    |___/\__\___/| .__/| .__/|_|_| |_|\__, | |_.__/ \__, (_)",
+                        @"                                                                       | |   | |             __/ |         __/ |  ",
+                        @"                                                                       |_|   |_|            |___/         |___/   ",
+                    };
+                    Console.WriteLine("\n\n");
+                    foreach (string line in arr3)
+                        Console.WriteLine(line);
+
 
                 }
                 else
                 {
-                    Console.WriteLine("Ok, then give me $" + total + ".");
+                    Console.WriteLine("Ok, great. Your total is $" + total + ".");
+                    var arr3 = new[]
+                    {
+                        @"      _______ _                 _           __                 _                    _               _           _ ",
+                        @"     |__   __| |               | |         / _|               | |                  (_)             | |         | |",
+                        @"        | |  | |__   __ _ _ __ | | _____  | |_ ___  _ __   ___| |_ ___  _ __  _ __  _ _ __   __ _  | |__  _   _| |",
+                        @"        | |  | '_ \ / _` | '_ \| |/ / __| |  _/ _ \| '__| / __| __/ _ \| '_ \| '_ \| | '_ \ / _` | | '_ \| | | | |",
+                        @"        | |  | | | | (_| | | | |   <\__ \ | || (_) | |    \__ \ || (_) | |_) | |_) | | | | | (_| | | |_) | |_| |_|",
+                        @"        |_|  |_| |_|\__,_|_| |_|_|\_\___/ |_| \___/|_|    |___/\__\___/| .__/| .__/|_|_| |_|\__, | |_.__/ \__, (_)",
+                        @"                                                                       | |   | |             __/ |         __/ |  ",
+                        @"                                                                       |_|   |_|            |___/         |___/   ",
+                    };
+                    Console.WriteLine("\n\n");
+                    foreach (string line in arr3)
+                        Console.WriteLine(line);
+
                 }
 
                     
@@ -57,6 +88,20 @@ namespace Bakery
             else 
             {
                 Console.WriteLine("No problem. Thanks for stopping by. I hope you have a great rest of your day!");
+                var arr2 = new[]
+                      {
+                        @"       _____                 _ _                _ ",
+                        @"      / ____|               | | |              | |",
+                        @"     | |  __  ___   ___   __| | |__  _   _  ___| |",
+                        @"     | | |_ |/ _ \ / _ \ / _` | '_ \| | | |/ _ \ |",
+                        @"     | |__| | (_) | (_) | (_| | |_) | |_| |  __/_|",
+                        @"      \_____|\___/ \___/ \__,_|_.__/ \__, |\___(_)",
+                        @"                                      __/ |       ",
+                        @"                                     |___/        ",
+                     };
+                Console.WriteLine("\n\n");
+                foreach (string line in arr2)
+                    Console.WriteLine(line);
             }
         }
     }

@@ -7,12 +7,9 @@ namespace Bakery
     {
         public static void Main()
         {
-
             Console.BackgroundColor = ConsoleColor.Gray;
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.Clear();
-
-
             var arr = new[]
             {
                 @" _    _      _                          ",
@@ -65,9 +62,7 @@ namespace Bakery
                     };
                     Console.WriteLine("\n\n");
                     foreach (string line in arr3)
-                        Console.WriteLine(line);
-
-
+                    Console.WriteLine(line);
                 }
                 else
                 {
@@ -89,10 +84,7 @@ namespace Bakery
                     Console.WriteLine("\n\n");
                     foreach (string line in arr3)
                         Console.WriteLine(line);
-
-                }
-
-                    
+                }      
             } 
             else 
             {
@@ -113,7 +105,7 @@ namespace Bakery
                      };
                 Console.WriteLine("\n\n");
                 foreach (string line in arr2)
-                    Console.WriteLine(line);
+                Console.WriteLine(line);
             }
         }
     }

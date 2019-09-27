@@ -12,15 +12,17 @@ namespace Bakery
             string PurchaseYN = Console.ReadLine();
             if (PurchaseYN == "Y" || PurchaseYN == "y")
             {
-                Cookie cookie = new Cookie(cookieQuant, cookieTotal);
-                Bread bread = new Bread(breadQuant, breadTotal);
                 Console.WriteLine("How many loaves of sourdough would you like?");
                 int breadQuant = int.Parse(Console.ReadLine());
                 Console.WriteLine("How many cookies would you like?");
                 int cookieQuant = int.Parse(Console.ReadLine());
-                int total = (cookie.CookieCost(cookieQuant)) + (bread.BreadCost(breadQuant));
-                Console.WriteLine("Your total is $" + total);
-            }
+                int cookieTotal = 0;
+                int breadTotal = 0;
+                Cookie cookie = new Cookie(cookieQuant, cookieTotal);
+                Bread bread = new Bread(breadQuant, breadTotal);
+                int total = (Cookie.CookieCost(cookieQuant, cookieTotal)) + (Bread.BreadCost(breadQuant, breadTotal));
+                Console.WriteLine("Your total is $" + (Bread.BreadCost(breadQuant, breadTotal)));
+            } 
             else 
             {
                 Console.WriteLine("No problem. Thanks for stopping by. I hope you have a great rest of your day!");

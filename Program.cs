@@ -13,9 +13,9 @@ namespace Bakery
             if (PurchaseYN == "Y" || PurchaseYN == "y")
             {
                 Console.WriteLine("How many loaves of sourdough would you like?");
-                int quantityLoaves = int.Parse(Console.ReadLine());
+                int breadQuant = int.Parse(Console.ReadLine());
                 Console.WriteLine("How many pasteries would you like?");
-                int quantityPasteries = int.Parse(Console.ReadLine());            
+                int cookieQuant = int.Parse(Console.ReadLine());            
             }
             else 
             {

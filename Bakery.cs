@@ -1,3 +1,5 @@
+using System;
+
 namespace Bakery
 {
 
@@ -12,9 +14,10 @@ namespace Bakery
         CookieTotal = cookieTotal;
         }
 
-        public static int Cookie(int cookieQuant)
+        public static int CookieCost(int cookieQuant, int cookieTotal)
         {
-            cookieTotal = Math.ceil((cookieQuant / 2) * )
+            cookieTotal = Math.ceiling((cookieQuant / 3) * 5);
+            return cookieTotal;
         }
 
     }
@@ -31,9 +34,9 @@ namespace Bakery
             BreadTotal = breadTotal;
         }
 
-        public static int Bread(int breadQuant)
+        public static int BreadCost(int breadQuant, int breadTotal)
         {
-            breadTotal = Math.ceil(breadQuant / 2) * 5;
+            breadTotal = Math.ceiling(breadQuant / 2) * 5;
             return breadTotal;
         }
 
